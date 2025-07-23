@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+        }
+        header {
+            background-color: #0099cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0077aa;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #0077aa;
+        }
+        .paquete {
+            margin-bottom: 20px;
+        }
+        .destino {
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #0099cc;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #0077aa;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #005f87;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explora el Mundo con Nosotros</h1>
+    <p>Tu agencia de viajes de confianza</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#destinos">Destinos</a>
+    <a href="#paquetes">Paquetes</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una agencia de viajes local dedicada a ofrecer experiencias inolvidables. Contamos con años de trayectoria organizando viajes a los destinos más populares, con atención personalizada y precios accesibles.</p>
+</section>
+
+<section id="destinos">
+    <h2>Destinos</h2>
+    <div class="destino">
+        <h3>París, Francia</h3>
+        <p>Descubrí la ciudad del amor con tours guiados, museos y gastronomía increíble.</p>
+    </div>
+    <div class="destino">
+        <h3>Bariloche, Argentina</h3>
+        <p>Montañas, nieve y chocolates te esperan en uno de los lugares más hermosos del sur.</p>
+    </div>
+    <div class="destino">
+        <h3>Punta Cana, República Dominicana</h3>
+        <p>Sol, playa y resorts all inclusive para que disfrutes al máximo.</p>
+    </div>
+</section>
+
+<section id="paquetes">
+    <h2>Paquetes Turísticos</h2>
+    <div class="paquete">
+        <h3>Europa Clásica</h3>
+        <p>Incluye vuelos, alojamiento y visitas a París, Roma y Madrid. <strong>Precio: USD 2.500</strong></p>
+    </div>
+    <div class="paquete">
+        <h3>Aventura en Patagonia</h3>
+        <p>Paquete de 5 días con excursiones, traslados y hotel 3 estrellas. <strong>Precio: USD 900</strong></p>
+    </div>
+    <div class="paquete">
+        <h3>Caribe Premium</h3>
+        <p>7 noches en Punta Cana con todo incluido y paseos marítimos. <strong>Precio: USD 1.800</strong></p>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto y Reservas</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Consulta o reserva:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Agencia de Viajes Local. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
